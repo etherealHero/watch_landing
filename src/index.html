@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Watch shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="/" class="menu__item-link">
+                <img src="img/logo_invert.svg" alt="logo" />
+              </a>
+            </li>
+            <li class="menu__item">
+              <ul class="menu__item-list" id="menu-list">
+                <li>
+                  <a href="#" class="menu__item-link">Каталог</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item-link">Акции</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item-link">Доставка</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item-link">Контакты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__item-link">
+                <img src="img/search.svg" alt="search" />
+              </a>
+              <a href="#" class="menu__item-link">
+                <span class="badge">1</span>
+                <img src="img/like.svg" alt="like" />
+              </a>
+              <a href="#" class="menu__item-link">
+                <img src="img/cart.svg" alt="cart" />
+              </a>
+              <button class="btn-burger" id="btn-burger">
+                <span></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section section-main">
+      <div class="container">
+        <div class="main">
+          <div class="main__img">
+            <span class="main__img-price">22 000 ₽</span>
+            <img src="img/watch_main.png" alt="watch_main" />
+            <span class="main__img-diameter">28 мм диаметр</span>
+          </div>
+          <div class="main__item">
+            <h1 class="main__item-title">Весна/Лето 2019</h1>
+            <h3 class="main__item-subtitle">Коллекция</h3>
+            <p class="main__item-description">Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
+            <a class="btn" href="#">Смотреть каталог</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-popular">
+      <div class="container">
+        <div class="section__title">Популярные модели</div>
+
+        <div class="model">
+          <div class="model__item">
+            <h5 class="model__item-brand">Rado</h5>
+            <span class="model__item-price">65 300 ₽</span>
+            <div class="model__item-img">
+              <img src="img/watch_1.png" alt="watch_1" />
+            </div>
+            <a href="#" class="model__item-link">Подробнее</a>
+          </div>
+          <div class="model__item">
+            <h5 class="model__item-brand">Bvlgari</h5>
+            <span class="model__item-price">81 700 ₽</span>
+            <div class="model__item-img">
+              <img src="img/watch_3.png" alt="watch_3" />
+            </div>
+            <a href="#" class="model__item-link">Подробнее</a>
+          </div>
+          <div class="model__item">
+            <h5 class="model__item-brand">Bvlgari</h5>
+            <span class="model__item-price">72 700 ₽</span>
+            <div class="model__item-img">
+              <img src="img/watch_4.png" alt="watch_4" />
+            </div>
+            <a href="#" class="model__item-link">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-banner">
+      <div class="container">
+        <div class="banner">
+          <div class="banner__item">
+            <div class="banner__img">
+              <img src="img/photo_banner.jpg" alt="photo_banner" />
+            </div>
+            <div class="banner__option">
+              <h2 class="banner__option-title section__title">Подлинное качество</h2>
+              <p class="banner__option-description">
+                Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет
+                гордости и престижа.
+              </p>
+              <a class="btn btn-accent" href="#">Смотреть каталог</a>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a href="#" class="pagination__prev"></a>
+          <span class="pagination__current">01</span>
+          <a href="#" class="pagination__next"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-social">
+      <div class="container">
+        <div class="social">
+          <div class="social__item">
+            <h2 class="social__item-title section__title">Следите за нашими новостями</h2>
+            <p class="social__item-description">
+              Подписывайтесь на <b>@conquest_watch</b> в соцсетях и узнавайте о новинках и акциях первыми.
+            </p>
+            <div class="social__flex">
+              <a href="#" class="social__flex-item">
+                <img src="img/instagram_icon.svg" alt="instagram_icon" />
+              </a>
+              <a href="#" class="social__flex-item">
+                <img src="img/facebook_icon.svg" alt="facebook_icon" />
+              </a>
+              <a href="#" class="social__flex-item">
+                <img src="img/twitter_icon.svg" alt="twitter_icon" />
+              </a>
+            </div>
+          </div>
+          <div class="social__gallery">
+            <div class="social__gallery-img" id="area1">
+              <img src="img/photo_1.jpg" alt="photo_1" />
+            </div>
+            <div class="social__gallery-img" id="area2">
+              <img src="img/photo_2.jpg" alt="photo_2" />
+            </div>
+            <div class="social__gallery-img" id="area3">
+              <img src="img/photo_3.jpg" alt="photo_3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <a class="footer__col-logo" href="/">
+              <img src="img/logo.svg" alt="logo" />
+            </a>
+            <ul>
+              <li class="footer__col-link">
+                <a href="tel:84994797">8 (499) 450-47-97 </a>
+              </li>
+              <li class="footer__col-link">
+                <a href="email:info@conquest.watch.ru">info@conquest.watch.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h5 class="footer__col-title">О компании</h5>
+            <ul>
+              <li class="footer__col-link">
+                <a href="#">Наши магазины</a>
+              </li>
+              <li class="footer__col-link">
+                <a href="#">Вакансии</a>
+              </li>
+              <li class="footer__col-link">
+                <a href="#">Сертификаты</a>
+              </li>
+              <li class="footer__col-link"><a href="#">Отзывы</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h5 class="footer__col-title">Покупателям</h5>
+            <ul>
+              <li class="footer__col-link">
+                <a href="#">Каталог товаров</a>
+              </li>
+              <li class="footer__col-link">
+                <a href="#">Как заказать?</a>
+              </li>
+              <li class="footer__col-link"><a href="#">FAQ</a></li>
+              <li class="footer__col-link">
+                <a href="#">Корпоративным клиентам</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h5 class="footer__col-title">Оплата и доставка</h5>
+            <ul>
+              <li class="footer__col-link">
+                <a href="#">Способы оплаты</a>
+              </li>
+              <li class="footer__col-link">
+                <a href="#">Время доставки</a>
+              </li>
+              <li class="footer__col-link">
+                <a href="#">Гарантии и ремонт</a>
+              </li>
+              <li class="footer__col-link">
+                <a href="#">Возврат и компенсация</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

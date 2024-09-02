@@ -1,0 +1,282 @@
+@import "variables";
+
+// 1170 - 976
+@media screen and (max-width: $xl) {
+  .container {
+    padding: 0 10px;
+  }
+  .pagination {
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .menu__item-list {
+    gap: 10px;
+  }
+
+  .section {
+    &-main {
+      margin-top: -100px;
+      max-height: 702px;
+    }
+
+    &-popular {
+      padding: 30px 0;
+    }
+
+    &-banner {
+      padding: 52px 30px;
+    }
+  }
+
+  .main {
+    &__img {
+      margin-right: -90px;
+
+      &-price {
+        left: -30px;
+      }
+
+      &-diameter {
+        bottom: 180px;
+        left: -24px;
+        right: unset;
+
+        &::after {
+          right: -65px;
+          left: unset;
+        }
+      }
+
+      & img,
+      &::before {
+        scale: 0.8;
+      }
+    }
+  }
+
+  .model {
+    gap: 0;
+  }
+
+  .banner {
+    &__item {
+      gap: 30px;
+    }
+
+    &__option {
+      &-title,
+      &-description {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .btn-burger {
+    display: inline-block;
+  }
+  .menu__item {
+    &-list {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+
+      background-color: #fff;
+
+      height: 0;
+      padding-bottom: 0;
+      overflow-y: hidden;
+
+      &.active {
+        height: 230px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .section {
+    &-main {
+      max-height: 1200px;
+      margin-top: -220px;
+
+      padding-bottom: 40px;
+    }
+
+    &-social {
+      padding: 60px 0;
+    }
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -100px;
+
+    &__item {
+      position: relative;
+
+      &-title {
+        margin-bottom: 0;
+      }
+
+      &-subtitle {
+        margin-bottom: 20px;
+      }
+
+      &-description {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__img {
+      position: relative;
+      left: 50px;
+      width: 350px;
+      height: 600px;
+
+      &-price {
+        font-size: 14px;
+        top: 280px;
+        left: 0;
+      }
+
+      &-diameter {
+        font-size: 14px;
+        bottom: 50px;
+        left: 0;
+        right: unset;
+
+        &::after {
+          right: -65px;
+          left: unset;
+        }
+      }
+      & img,
+      &::before {
+        scale: 0.5;
+      }
+
+      &::before {
+        top: -70px;
+        scale: 0.4;
+      }
+    }
+  }
+
+  .btn {
+    padding: 20px 30px;
+  }
+
+  .model {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner {
+    &__item {
+      flex-direction: column;
+    }
+
+    &__option {
+      &-description {
+        position: relative;
+      }
+    }
+  }
+
+  .pagination {
+    margin: 20px 45px 0;
+  }
+
+  .social {
+    flex-direction: column-reverse;
+    gap: 30px;
+
+    &__item {
+      &-description {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__gallery {
+      max-width: 490px;
+      margin: 0 auto;
+    }
+  }
+
+  .footer {
+    padding: 50px 0;
+
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: start;
+      gap: 30px;
+
+      padding: 0 10px;
+    }
+
+    &__col {
+      &-title {
+        margin-bottom: 10px;
+      }
+
+      &-link {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .main {
+    align-items: start;
+    margin-left: 0;
+
+    &__item {
+      left: 0;
+
+      &-title {
+        &::before {
+          display: none;
+        }
+      }
+
+      &-title,
+      &-subtitle {
+        white-space: initial;
+      }
+    }
+
+    &__img {
+      left: 00px;
+      width: 350px;
+      height: 600px;
+
+      &-price {
+        left: 20px;
+      }
+
+      &-diameter {
+        left: 20px;
+      }
+    }
+  }
+
+  .section {
+    &-main {
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+
+  .model {
+    grid-template-columns: 1fr;
+  }
+}

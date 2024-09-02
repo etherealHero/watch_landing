@@ -1,2 +1,0 @@
-"use strict";var btn=document.getElementById("btn-burger"),menu=document.getElementById("menu-list"),currnetLink=null;btn.addEventListener("click",function(){btn.classList.toggle("active"),menu.classList.toggle("active")}),document.querySelectorAll(".menu__item-link").forEach(function(t){t.addEventListener("click",function(e){e.preventDefault(),currnetLink&&currnetLink.classList.remove("active"),(currnetLink=t).classList.add("active"),setTimeout(function(){return menu.classList.remove("active")},550),btn.classList.remove("active")})});
-//# sourceMappingURL=main.js.map

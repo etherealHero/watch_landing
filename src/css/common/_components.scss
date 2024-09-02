@@ -1,0 +1,183 @@
+@import "variables";
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 13px;
+  height: 13px;
+
+  transform: translate3d(-4px, 5px, 0);
+
+  background-color: #e6c8b4;
+  border-radius: 50%;
+  font-size: 8px;
+  text-align: center;
+  padding: 2px;
+  color: #000 !important;
+}
+
+.btn {
+  background-color: $dark;
+  padding: 26px 38px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  transition: color 0.2s ease;
+
+  border: 0;
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+
+  &:hover {
+    color: #e6c8b4;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: $accent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: width 0.3s ease;
+  }
+
+  &-accent {
+    background-color: $accent;
+
+    &::after {
+      background-color: $dark;
+    }
+
+    &:hover {
+      color: $font-gray;
+    }
+  }
+
+  &-burger {
+    display: none;
+    position: relative;
+    top: -8px;
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border: 0;
+    outline: none;
+
+    span,
+    span::after,
+    span::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 1px;
+      background-color: #000;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+
+      transition-duration: 0.2s;
+      transition-delay: 0.1s;
+      transition-timing-function: ease;
+    }
+
+    span::after {
+      transform: translateX(-50%);
+      top: 600%;
+    }
+
+    span::before {
+      transform: translateX(-50%);
+      top: -600%;
+    }
+
+    &.active {
+      span {
+        background: transparent;
+      }
+
+      span::after {
+        transform: rotate(45deg);
+        top: 0;
+        left: 0;
+      }
+
+      span::before {
+        transform: rotate(135deg);
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.pagination {
+  font-family: "Prata", serif;
+  font-size: 12px;
+
+  position: relative;
+  width: 20px;
+  margin-top: 20px;
+  margin-left: 400px;
+
+  &__current {
+    font-family: "Prata", serif;
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    right: 35px;
+    top: -7px;
+
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35%;
+      left: 45%;
+      width: 8px;
+      height: 8px;
+
+      border: 1px solid $font-black;
+      border-top: 0;
+      border-right: 0;
+
+      transform: rotate(45deg);
+    }
+
+    &:hover::after {
+      border-color: $accent;
+    }
+  }
+
+  &__next {
+    left: 26px;
+
+    &::after {
+      top: 35%;
+      left: 28%;
+
+      border: 1px solid $font-black;
+      border-bottom: 0;
+      border-left: 0;
+    }
+  }
+}
